@@ -1,0 +1,29 @@
+		Multithread chatroom client and server
+
+Please follow the steps below to compile and run the chatroom
+
+Compile:
+
+  [1. Make sure you have curses lib]
+  # sudo apt-get install libncurses5
+  # sudo apt-get install libncurses5-dev
+
+  [2. Compile]
+  # cd chatroom
+  # make
+
+Run:
+
+  [1. run the server]
+  # ./server
+
+  [2. run the client]
+  # ./client 4500 <name>
+  (4500 is the default port, <name> is the username of the client)
+
+Client:
+
+  1. Type the message and push enter to send.
+  2. Push <Tab> to show the help message.
+  3. Type "/c <color>" to config the message color. <color> is integer from 1 to 5.
+  4. Push <ESC> to exit from the chatroom.
